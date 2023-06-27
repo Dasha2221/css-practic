@@ -1,3 +1,8 @@
+:root {
+    --text-color: red;
+    --space-medium: 24px;
+}
+
 .page {
     background: #ffffff;
     padding: 0 15px;
@@ -9,7 +14,7 @@
 }
 
 .header {
-    padding: 24px;
+    padding: var(--space-medium);
     border-bottom: 1px solid #dee2e6;
 }
 
@@ -36,6 +41,8 @@
 .nav_link:hover {
     text-decoration: underline;
     color: blue;
+
+    opacity: 50%;
 }
 
 .nav_vertical>.nav_link {
@@ -43,7 +50,7 @@
 }
 
 .nav_inline>.nav_link:not(:last-child) {
-    margin-right: 24px;
+    margin-right: var(--space-medium);
 }
 
 .nav_vertical>.nav_link:not(:last-child) {
@@ -60,7 +67,7 @@
 }
 
 .footer {
-    padding: 24px 0;
+    padding: var(--space-medium) 0;
     border-top: 1px solid #dee2e6;
 }
 
@@ -74,7 +81,7 @@
 
 .footer_title {
     font-size: 20px;
-    color: #212529;
+    color: var(--text-color, 212529);
 
     display: block;
     margin-bottom: 12px;
@@ -82,15 +89,15 @@
 
 .hero_title {
     font-size: 56px;
-    color: #212529;
+    color: var(--text-color, 212529);
     font-weight: 500;
     margin: 12px;
     text-align: center;
 }
 
 .hero_text {
-    color: #212529;
-    font-size: 20px;
+    color: var(--text-color, 212529);
+    font-size: 30px;
     text-align: center;
     max-width: 585px;
     margin: 0 auto;
@@ -99,24 +106,24 @@
 }
 
 .plans_card:not(:last-of-type) {
-    margin-right: 24px;
+    margin-right: var(--space-medium);
 }
 
 .card-header {
     padding: 12px;
     text-align: center;
-    font-size: 24px;
-    color: #212529;
+    font-size: var(--space-medium);
+    color: var(--text-color, 212529);
 }
 
 .card_body {
-    padding: 24px;
+    padding: var(--space-medium);
 
 }
 
 .card_price_amount {
     font-size: 40px;
-    color: #212529;
+    color: var(--text-color, 212529);
 }
 
 .card_price_duration {
@@ -127,17 +134,17 @@
 }
 
 .card_block {
-    margin-bottom: 24px;
+    margin-bottom: var(--space-medium);
     text-align: center;
 }
 
 .card_block:not(:last-of-type) {
-    margin-bottom: 24px;
+    margin-bottom: var(--space-medium);
 }
 
 .card_description_item {
     font-size: 16px;
-    color: #212529;
+    color: var(--text-color, 212529);
 
     display: block;
 }
@@ -168,6 +175,8 @@
     box-shadow: 5px 5px 10px 2px rgba(166, 159, 194, 0.549);
 
     cursor: initial;
+
+    opacity: 40%;
 }
 
 .btn {
@@ -196,4 +205,90 @@ h1 {
     text-overflow: ellipsis;
 
     white-space: nowrap;
+}
+
+
+/* background-image: url('/img/test2.png');
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    background-size: cover; */
+
+
+.hero_text {
+    padding: 40px;
+    color: white;
+
+    border-image-source: url('/img/test2.png');
+    border-image-width: 10% 10%;
+
+    border-image-slice: 10% 10%;
+
+    border-image-outset: 40px;
+}
+
+.card_block {
+    /* list-style-type: upper-alpha; */
+    list-style-position: inside;
+
+    list-style-image: linear-gradient(to bottom right, red, blue);
+    padding: 0;
+}
+
+.card_description_item {
+    display: list-item;
+}
+
+/* .table tr {
+    border: 1px solid #343a40;
+} */
+
+.table tr td {
+    border: 1px solid #878a8d;
+    border-bottom-color: red;
+    border-right-color: blue;
+}
+
+.table {
+    table-layout: fixed;
+    width: 600px;
+
+    border-collapse: unset;
+
+    border-spacing: 10px 20px;
+
+    caption-side: top;
+
+    empty-cells: hide;
+}
+
+
+.nav_link::before,
+.nav_link::after {
+    /* content:  url('/img/test2.png'); */
+
+    content: '';
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    background-image: url('/img/test2.png');
+}
+
+.nav_link::before {
+    margin-right: 15px;
+}
+
+.nav_link::after {
+    margin-left: 15px;
+}
+
+.calc {
+    width: 600px;
+
+    margin-left: calc(50% - (600px / 2));
 }
