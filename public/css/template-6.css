@@ -338,8 +338,6 @@
 
     border-radius: var(--border-radius-s);
     background: #F8F9FA;
-
-    position: relative;
 }
 
 .hot {
@@ -374,8 +372,9 @@
     font-weight: var(--weight-title);
     line-height: 120%;
 
-    top: 200px;
-    left: 10px;
+    position: relative;
+    bottom: 50px;
+    left: 350px;
 }
 
 .badge {
