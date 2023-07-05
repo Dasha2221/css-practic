@@ -946,6 +946,7 @@ router.get('/template-7', function (req, res) {
         name: 'Lorem Ipsum',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id dolor eget sapien lobortis finibus. Fusce euismod, ipsum sit amet pulvinar imperdiet, sapien nunc viverra nulla, vel pulvinar velit leo sed velit.',
+        button: 'Read All',
       },
       {
         id: 2,
@@ -954,6 +955,7 @@ router.get('/template-7', function (req, res) {
         name: 'Dolor Sit Amet',
         description:
           'Etiam luctus ante eget ante convallis iaculis. Nunc viverra quam vel libero accumsan, non malesuada neque vestibulum. Curabitur malesuada, velit ut pretium ullamcorper, lacus elit vehicula sapien, ut sollicitudin quam metus eget sapien.',
+        button: 'Read All',
       },
       {
         id: 3,
@@ -961,6 +963,7 @@ router.get('/template-7', function (req, res) {
         name: 'Ipsum Dolor',
         description:
           'Sed euismod risus sit amet sapien fermentum, vitae scelerisque lectus hendrerit. Integer at velit tristique, varius dolor in, gravida est. Nunc sagittis justo vel velit tempor, eget faucibus nulla posuere.',
+        button: 'Read All',
       },
     ],
 
