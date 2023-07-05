@@ -1,0 +1,19 @@
+<div class="p">
+    {{>headerDark header=header}}
+
+</div>
+<main class="main">
+
+</main>
+
+
+<footer class=" footer">
+    {{#with footer}}
+    <div class="link">
+        {{#each pages}}
+        <a href="{{path}}" class="pages_link">{{name}}</a>
+        {{/each}}
+        <span class="footer_copyright">{{copyright}}</span>
+    </div>
+    {{/with}}
+</footer>

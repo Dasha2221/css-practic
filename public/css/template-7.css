@@ -1,0 +1,247 @@
+:root {
+    --space-xs: 8px;
+    --space: 10px;
+    --space-m: 12px;
+    --space-xm: 16px;
+    --space-l: 24px;
+    --space-b: 36px;
+
+    --size-s: 14px;
+    --size-d: 16px;
+    --size-l: 20px;
+    --size-b: 24px;
+
+    --color-border: #d3dee9;
+
+    --color-primary: rgb(46, 46, 255);
+    --color-white: #ffffff;
+    --color-title: #212529;
+    --color-text: #343a40;
+
+    --color-page: #111827;
+
+    --border-radius-d: 12px;
+    --border-radius-m: 10px;
+    --border-radius-s: 4px;
+
+
+    --weight-title: 600;
+    --weight-text: 400;
+
+    --page-width: 1150px;
+}
+
+/* ================================= */
+
+.page {
+    background: var(--color-page);
+
+    display: flex;
+    width: 1920px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-s);
+}
+
+.page_content {
+    display: flex;
+    width: var(--page-width);
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex-shrink: 0;
+
+}
+
+/* ================================= */
+
+.p {
+    max-width: var(--page-width);
+    width: 100%;
+    height: 30px;
+
+    background-color: var(--color-page);
+}
+
+.header {
+    padding: var(--space-m) 0px;
+    border-bottom: 1px solid #253041;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: sticky;
+
+}
+
+.brandName {
+    display: flex;
+    padding: var(--space-xs) var(--space-m);
+    align-items: center;
+    gap: 10px;
+    width: 56px;
+    height: 30px;
+
+    border-radius: var(--border-radius-m);
+    background: #885FFB;
+
+    color: var(--color-white);
+    font-size: var(--size-s);
+    font-weight: var(--weight-title);
+    line-height: 100%;
+
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.brandName:hover {
+    opacity: 0.8;
+    color: chartreuse;
+}
+
+.user {
+    display: flex;
+    padding-top: var(--space-m);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    height: 30px;
+}
+
+.ad {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    font-size: var(--size-s);
+    font-weight: var(--weight-text);
+    line-height: 100%;
+    gap: 6px;
+}
+
+.ad_ad {
+    display: flex;
+    padding: 2px 6px;
+    align-items: flex-start;
+    gap: var(--space-s);
+
+    border-radius: var(--border-radius-s);
+    background: rgba(136, 95, 251, 0.20);
+    color: #885FFB;
+    font-size: var(--size-s);
+
+    font-weight: var(--weight-title);
+    line-height: 100%;
+}
+
+.url_ad {
+    color: var(--color-white);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+.url_ad:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.user_online {
+    color: var(--color-white);
+    font-size: var(--size-s);
+    font-weight: var(--weight-text);
+    line-height: 100%;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav_inline {
+    gap: var(--space-l);
+}
+
+.nav_vertical {
+    gap: var(--space-xm);
+    flex-direction: column;
+}
+
+.nav_link {
+    color: var(--color-white);
+    font-size: var(--size-d);
+    font-weight: var(--weight-text);
+    line-height: 100%;
+    font-size: var(--size-d);
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+.footer {
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xm);
+    align-self: stretch;
+
+    max-width: var(--page-width);
+    width: 100%;
+    height: 64px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+
+.pages_link {
+    color: var(--color-white);
+    font-size: var(--size-d);
+
+    font-weight: var(--weight-text);
+    line-height: 100%;
+    gap: 16px;
+    text-decoration: none;
+
+    transition-property: opacity, background-color, color, border-radius;
+    transition-duration: 1s;
+}
+
+.pages_link:hover {
+    opacity: 0.7;
+    background-color: var(--color-primary);
+    color: yellow;
+    border-radius: var(--border-radius-s);
+}
+
+.footer_copyright {
+    color: #9CA3AF;
+    font-size: var(--size-d);
+
+    font-weight: var(--weight-text);
+    line-height: 100%;
+}
+
+
+
+.main {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    gap: 40px;
+}
